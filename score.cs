@@ -32,8 +32,8 @@ class score
         }
 
     }
-    public void print(){
-
+    
+    public void DisplayScore(){
         Console.WriteLine(totalScore);
     }
 
