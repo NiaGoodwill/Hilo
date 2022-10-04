@@ -1,2 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+Deck deck = new Deck();
+string card = deck.DrawCard();
+Console.WriteLine (card);
