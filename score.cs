@@ -34,7 +34,7 @@ class score
     }
     
     public void DisplayScore(){
-        Console.WriteLine(totalScore);
+        Console.WriteLine($"This is your Score: {totalScore}");
     }
 
 
