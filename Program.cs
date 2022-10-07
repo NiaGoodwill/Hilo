@@ -1,20 +1,31 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿//creates score
 score Score = new score();
-Score.DisplayScore();
 
-
+// creates deck
 Deck deck = new Deck();
 
-Console.Write("The card is: ");
-deck.DrawCard();
+string playAgain = "y";
 
-Console.Write("Higher or lower? (Y/N): ");
-Console.ReadLine();
+while (playAgain == "y")
+{
+Console.WriteLine("");
 
-Console.Write("Next Card is : ");
-deck.DrawCard();
+    Score.DisplayScore();
 
+    Console.Write("The card is: ");
+    deck.DrawCard();
+
+    Console.Write("Higher or lower? (h/l): ");
+    string? choice = Console.ReadLine();
+
+    Console.Write("Next Card is: ");
+    deck.DrawCard();
+
+    Score.DisplayScore();
+
+    Console.Write("Would you like to play again? (y/n): ");
+    playAgain = Console.ReadLine().ToLower();
+}
 
 
 
