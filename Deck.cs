@@ -1,9 +1,14 @@
 class Deck
 {
-    List<string> deck = new List<string>();
-    Dictionary<string, int> deckInts = new Dictionary<string, int>();
-    List<string> suits = new List<string> {"Spades", "Hearts","Clubs", "Diamonds"};
     Random random = new Random();
+    // the deck
+    List<string> deck = new List<string>();
+    // the complementary dictionary that provides values for each card in the deck
+    Dictionary<string, int> deckInts = new Dictionary<string, int>();
+    // list of suits for convenience
+    List<string> suits = new List<string> {"Spades", "Hearts","Clubs", "Diamonds"};
+
+    // constructor
     public Deck()
     {
         ShuffleDeck();
