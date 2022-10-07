@@ -8,18 +8,20 @@ string playAgain = "y";
 
 while (playAgain == "y")
 {
-Console.WriteLine("");
+    Console.WriteLine("");
 
     Score.DisplayScore();
 
     Console.Write("The card is: ");
-    deck.DrawCard();
+    Console.WriteLine(deck.DrawCard());
 
     Console.Write("Higher or lower? (h/l): ");
     string? choice = Console.ReadLine();
 
     Console.Write("Next Card is: ");
-    deck.DrawCard();
+    Console.WriteLine(deck.DrawCard());
+
+    
 
     Score.DisplayScore();
 

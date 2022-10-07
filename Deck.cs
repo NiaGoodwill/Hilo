@@ -43,10 +43,11 @@ class Deck
     }
     
     // Draw, display, and discard the first card in the deck
-    public void DrawCard()
+    public string DrawCard()
     {
-        Console.WriteLine($"{deck[0]}");
+        string card = deck[0];
         deck.RemoveAt(0);
+        return card;
     }
 
     public void ShuffleDeck()
