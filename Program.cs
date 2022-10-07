@@ -23,6 +23,22 @@ while (playAgain == "y")
     string secondCard = deck.DrawCard();
     Console.WriteLine(secondCard);
 
+    string hilo = deck.RelativeCardPosition(firstCard,secondCard);
+    if (String.Equals(hilo,choice)){
+        
+        Score.AddScore();
+    }
+    else if (hilo== "l"){
+
+        Score.LessScore();
+    }
+    
+    else if (hilo == "h"){
+
+        Score.LessScore();
+    }
+
+ 
 
 
 
@@ -31,7 +47,7 @@ while (playAgain == "y")
     Console.Write("Would you like to play again? (y/n): ");
     playAgain = Console.ReadLine().ToLower();
 }
-
+Console.WriteLine("Thanks for playing");
 
 
 
