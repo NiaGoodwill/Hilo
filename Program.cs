@@ -38,10 +38,6 @@ while (playAgain == "y")
         Score.LessScore();
     }
 
- 
-
-
-
     Score.DisplayScore();
 
     Console.Write("Would you like to play again? (y/n): ");
