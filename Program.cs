@@ -13,15 +13,18 @@ while (playAgain == "y")
     Score.DisplayScore();
 
     Console.Write("The card is: ");
-    Console.WriteLine(deck.DrawCard());
+    string firstCard = deck.DrawCard();
+    Console.WriteLine(firstCard);
 
     Console.Write("Higher or lower? (h/l): ");
     string? choice = Console.ReadLine();
 
     Console.Write("Next Card is: ");
-    Console.WriteLine(deck.DrawCard());
+    string secondCard = deck.DrawCard();
+    Console.WriteLine(secondCard);
 
-    
+
+
 
     Score.DisplayScore();
 

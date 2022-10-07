@@ -18,7 +18,7 @@ class Deck
     // replenish the deck. Remove all cards currently in the deck then add a full deck 
     void CollectCards()
     {
-        if ((deck.Count()) != 0)
+        if (deck.Count() != 0)
         {
             for ( int i = deck.Count() -1; i >= 0; i--)
                 {
@@ -53,10 +53,11 @@ class Deck
     public void ShuffleDeck()
     {
         CollectCards();
-        List<string> tempDeck = deck;
+        List<string> tempDeck = new List<string>();
         for ( int i = deck.Count() -1; i >= 0; i--)
         {
-        deck.RemoveAt(i);
+            tempDeck.Add(deck[i]);
+            deck.RemoveAt(i);
         }
         while (tempDeck.Count() != 0)
         {
